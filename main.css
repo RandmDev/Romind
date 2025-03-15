@@ -100,7 +100,7 @@ body {
 
 .game-image {
     position: relative;
-    height: 200px; /* Container'ın yüksekliğini sabit tutun */
+    height: 300px; /* Container'ın yüksekliğini artırın */
     overflow: hidden;
 }
 
