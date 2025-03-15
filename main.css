@@ -1,3 +1,7 @@
+html {
+  cursor: url("https://assets.codepen.io/1480814/cursor.svg"), auto
+}
+
 * {
     margin: 0;
     padding: 0;
