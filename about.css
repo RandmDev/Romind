@@ -1,85 +1,102 @@
-/* Genel Düzenlemeler */
+/* Ana Stil Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #1a1a1a; /* Orijinal arkaplan rengi */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Logo Düzeltme */
 .logo {
-  color: #ff4754 !important; /* ROMIND kırmızı */
+    color: #ff4754 !important;
+    text-decoration: none !important;
 }
 .logo span {
-  color: #ffffff !important; /* "Ind" beyaz */
+    color: #ffffff !important;
 }
 
 /* About Developer Section */
 .about-hero {
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 60px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
 }
 .about-hero h1 {
-  color: #ffffff !important;
-  font-size: 2.5rem;
-  width: 100%;
+    color: #ffffff !important;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Oyun Kartları Orijinal Stili */
+.game-card {
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.game-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Footer Düzeltmeleri */
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+.footer {
+    background: #000000 !important; /* Orijinal footer rengi */
+    padding: 3rem 0;
+    margin-top: 4rem;
 }
 .footer-section {
-  padding: 1rem;
-  background: rgba(255,255,255,0.05);
-  border-radius: 8px;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin: 1rem 0;
 }
 .footer-section h4 {
-  color: #ff4754;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+    color: #ff4754;
+    margin-bottom: 1rem;
 }
 .footer-section p {
-  color: #ddd;
-  line-height: 1.6;
+    color: #cccccc;
+    font-size: 0.9rem;
 }
 
 /* Responsive Düzen */
 @media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-  }
-  .games-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .game-card {
-    width: 100%;
-  }
+    .games-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .about-hero h1 {
+        font-size: 2rem;
+    }
 }
 
-/* Oyun Kartları İyileştirme */
-.game-card {
-  background: #2a2a2a;
-  border: 1px solid rgba(255,71,84,0.3);
+/* İndirme Butonları */
+.download-btn {
+    background: #ff4754;
+    color: white !important;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
+.download-btn:hover {
+    background: #ff2d3d;
+}
+
+/* Oyun Bilgi Metinleri */
 .game-info h3 {
-  color: #fff !important;
-  font-size: 1.2rem;
+    color: #ffffff !important;
+    margin: 1rem 0;
 }
 .meta {
-  color: #aaa;
-}
-.download-btn {
-  background: #ff4754;
-  margin-top: 10px;
-}
-
-/* Renk Kontrast İyileştirmeleri */
-body {
-  color: #eee;
-}
-.section-title {
-  color: #ff4754 !important;
-  border-bottom: 2px solid;
-  padding-bottom: 10px;
-  margin: 2rem 0;
+    color: #aaaaaa;
 }
