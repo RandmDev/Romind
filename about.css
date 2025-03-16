@@ -1,84 +1,85 @@
-/* About Hero Section */
+/* Genel Düzenlemeler */
+.logo {
+  color: #ff4754 !important; /* ROMIND kırmızı */
+}
+.logo span {
+  color: #ffffff !important; /* "Ind" beyaz */
+}
+
+/* About Developer Section */
 .about-hero {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-                url('images/about-bg.jpg') center/cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
 }
-
 .about-hero h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: #ffffff !important;
+  font-size: 2.5rem;
+  width: 100%;
 }
 
-/* About Content */
-.about-content {
-    padding: 4rem 0;
-    background: #1a1a1a;
+/* Footer Düzeltmeleri */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.footer-section {
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+}
+.footer-section h4 {
+  color: #ff4754;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.footer-section p {
+  color: #ddd;
+  line-height: 1.6;
 }
 
-.about-card {
-    background: #2a2a2a;
-    border-radius: 15px;
-    padding: 3rem;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-.about-card h2 {
-    color: #ff4754;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: #ddd;
-}
-
-.youtube-cta {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.youtube-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem 2rem;
-    background: #ff0000;
-    color: white;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.youtube-btn i {
-    font-size: 1.5rem;
-}
-
-.youtube-btn:hover {
-    background: #cc0000;
-    transform: translateY(-3px);
-}
-
-/* Responsive */
+/* Responsive Düzen */
 @media (max-width: 768px) {
-    .about-card {
-        padding: 2rem;
-    }
-    
-    .about-card h2 {
-        font-size: 2rem;
-    }
-    
-    .about-text p {
-        font-size: 1rem;
-    }
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game-card {
+    width: 100%;
+  }
+}
+
+/* Oyun Kartları İyileştirme */
+.game-card {
+  background: #2a2a2a;
+  border: 1px solid rgba(255,71,84,0.3);
+}
+.game-info h3 {
+  color: #fff !important;
+  font-size: 1.2rem;
+}
+.meta {
+  color: #aaa;
+}
+.download-btn {
+  background: #ff4754;
+  margin-top: 10px;
+}
+
+/* Renk Kontrast İyileştirmeleri */
+body {
+  color: #eee;
+}
+.section-title {
+  color: #ff4754 !important;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  margin: 2rem 0;
 }
