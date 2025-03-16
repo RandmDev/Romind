@@ -3,25 +3,13 @@
     padding: 4rem 0;
     background: #1a1a1a;
     color: #ffffff;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.about-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #ff4754;
+    text-align: center;
 }
 
 .about-text {
-    max-width: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .about-text h3 {
@@ -31,14 +19,17 @@
 }
 
 .about-text p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
+    font-size: 1.1rem;
+    color: #cccccc;
 }
 
 .social-icons {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .social-icons a {
@@ -53,13 +44,15 @@
 
 /* Responsive Tasarım */
 @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
+    .about-text h3 {
+        font-size: 1.8rem;
     }
 
-    .about-image img {
-        width: 150px;
-        height: 150px;
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
     }
 }
