@@ -12,6 +12,14 @@ body {
     line-height: 1.6;
 }
 
+.about-text {
+    color: rgb(109, 21, 22);
+    font-size: 75px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
